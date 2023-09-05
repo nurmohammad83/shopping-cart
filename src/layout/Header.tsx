@@ -63,7 +63,7 @@ const Header = () => {
         </div>
       </div>
       <div
-        className={`content md:hidden bg-white fixed pt-16 z-50 h-screen w-full top-[15%] duration-500 ${
+        className={`content md:hidden bg-white fixed pt-16 z-50 h-screen w-full top-[13%] duration-500 ${
           open ? "right-0" : "right-[-100%]"
         }`}
       >
