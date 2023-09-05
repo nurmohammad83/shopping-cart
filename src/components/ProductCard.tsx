@@ -9,10 +9,8 @@ interface IProps {
 
 const ProductCard = ({ product }: IProps) => {
     const dispatch = useAppDispatch();
-
     const handleAddProduct = (product: IProduct) => {
       dispatch(addToCart(product));
-     alert('Add Product')
     };
   const { name, price, image ,status} = product;
   return (
@@ -51,7 +49,7 @@ transition duration-500 hover:scale-100 justify-center items-center shadow hover
              status === false
                 ? "cursor-not-allowed bg-red-500"
                 : "bg-blue-500/80 hover:bg-blue-600/90 "
-            }  flex-grow border-none py-2 rounded-md text-white font-medium tracking-wider flex justify-center items-center gap-5 transition`}
+            }  flex-grow border-none py-2 rounded-md text-white font-medium tracking-wider flex justify-center items-center gap-4 transition`}
           >
            <span> Add To Build</span>
            <span> <BsFillCartFill/></span>
