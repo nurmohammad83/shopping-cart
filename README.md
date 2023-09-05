@@ -1,6 +1,6 @@
 #  YOUR SHOP
 
-## Live Link: https://shopping-cart-eta-jet.vercel.app/
+## Live Link: https://your-shop-shopping-cart.netlify.app/
 ## Server Link: https://technet-server-psi.vercel.app/
 
 ![YOUR SHOP](https://res.cloudinary.com/dyy4n4fmh/image/upload/v1693925209/Screenshot_187_e0qmrv.png)
