@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-non-null-asserted-optional-chain */
 import { Link } from "react-router-dom";
 import { BsFillCartFill } from "react-icons/bs";
 import { useState } from "react";
@@ -8,7 +9,7 @@ const Header = () => {
   const [showCart, setShowCart] = useState(false);
   const { products } = useAppSelector((state) => state.cart);
   const totalQuantity = products.reduce(
-    (accumulator, currentValue) => accumulator + currentValue?.quantity,
+    (accumulator, currentValue) => accumulator + currentValue?.quantity!,
     0
   );
   console.log(totalQuantity);
@@ -17,7 +18,7 @@ const Header = () => {
   };
   const [open, setOpen] = useState(false);
   return (
-    <nav className="h-14 mx-auto flex justify-between items-center bg-gray-100 rounded-full m-2 max-w-7xl px-6">
+    <nav className="h-14 sticky top-0 z-50 mx-auto flex justify-between items-center bg-gray-100 px-6 sm:px-16">
       <div>
         <Link to={'/'}>
         <h1 className="font-bold text-blue-600">
@@ -51,7 +52,7 @@ const Header = () => {
           <BsFillCartFill className="text-white " />
         </button>
         {showCart && (
-          <div className="absolute right-0 mt-2 w-64 sm:w-80 bg-white p-4 shadow-lg text-black rounded-lg">
+          <div className="absolute right-0 mt-2 w-64 sm:w-96 bg-white p-4 shadow-lg text-black rounded-lg">
             <Cart />
           </div>
         )}
@@ -63,7 +64,7 @@ const Header = () => {
         </div>
       </div>
       <div
-        className={`content md:hidden bg-white fixed pt-16 z-50 h-screen w-full top-[13%] duration-500 ${
+        className={`content md:hidden bg-white fixed pt-16 z-40 h-screen w-full top-[16%] duration-500 ${
           open ? "right-0" : "right-[-100%]"
         }`}
       >

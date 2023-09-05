@@ -17,7 +17,7 @@ const Cart = () => {
     products.map((product:IProduct)=>(
      <div key={product._id}>
        <div className="flex divide-y my-2 justify-between gap-4">
-    <img src={product.image} className="w-16 h-16 flex-shrink-0 object-cover" alt="" />
+    <img src={product.image} className="w-16 h-16 border flex-shrink-0 object-cover" alt="" />
     <div className="flex flex-1 justify-between flex-col">
     <div className="flex justify-between gap-4 text-black">
       <span className="font-bold">{product.name}</span>

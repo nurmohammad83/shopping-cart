@@ -4,7 +4,7 @@ const Footer = () => {
     <div className="container flex flex-wrap items-center justify-center mx-auto space-y-4 sm:justify-between sm:space-y-0">
       <div className="flex flex-row pr-3 space-x-4 sm:space-x-8">
         
-          <span className="text-2xl text-rose-600 font-bold">Your Shop</span>
+          <span className="text-2xl text-black font-bold"><span className="text-blue-600">Your</span> Shop</span>
        
       </div>
       <ul className="flex flex-wrap pl-3 space-x-4 sm:space-x-8">
