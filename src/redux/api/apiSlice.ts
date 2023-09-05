@@ -2,7 +2,7 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
 export const apiSlice = createApi({
   baseQuery: fetchBaseQuery({
-    baseUrl: import.meta.env.VITE_BASE_URL,
+    baseUrl: "https://technet-server-psi.vercel.app/",
   }),
   endpoints: (builder) => ({
     getProducts: builder.query({

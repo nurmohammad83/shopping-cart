@@ -1,6 +1,7 @@
 #  YOUR SHOP
 
 ## Live Link: https://shopping-cart-eta-jet.vercel.app/
+## Server Link: https://technet-server-psi.vercel.app/
 
 ![YOUR SHOP](https://res.cloudinary.com/dyy4n4fmh/image/upload/v1693925209/Screenshot_187_e0qmrv.png)
 
@@ -22,3 +23,4 @@ YOUR SHOP is a web application built with React.js, Typescript, Tailwind CSS, an
 git clone https://github.com/nurmohammad83/shopping-cart.git
 cd shopping-cart
 yarn add
+yarn dev
