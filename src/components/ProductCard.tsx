@@ -8,11 +8,11 @@ interface IProps {
 }
 
 const ProductCard = ({ product }: IProps) => {
-    const dispatch = useAppDispatch();
-    const handleAddProduct = (product: IProduct) => {
-      dispatch(addToCart(product));
-    };
-  const { name, price, image ,status} = product;
+  const dispatch = useAppDispatch();
+  const handleAddProduct = (product: IProduct) => {
+    dispatch(addToCart(product));
+  };
+  const { name, price, image, status } = product;
   return (
     <div
       className="bg-white text-gray-700 border min-h-[10rem] transform
@@ -35,24 +35,28 @@ transition duration-500 hover:scale-100 justify-center items-center shadow hover
         <p className="font-semibold text-2xl overflow-ellipsis whitespace-nowrap">
           {name}
         </p>
-
         {/* price */}
-
         <div className="py-2">
           <span className="text-xl font-bold">${price}</span>
         </div>
         {/* Button */}
-        <div onClick={() => handleAddProduct(product)} className="my-5  flex flex-wrap gap-2">
+        <div
+          onClick={() => handleAddProduct(product)}
+          className="my-5  flex flex-wrap gap-2"
+        >
           <button
             disabled={status === false}
             className={`${
-             status === false
+              status === false
                 ? "cursor-not-allowed bg-red-500"
                 : "bg-blue-500/80 hover:bg-blue-600/90 "
             }  flex-grow border-none py-2 rounded-md text-white font-medium tracking-wider flex justify-center items-center gap-4 transition`}
           >
-           <span> Add To Build</span>
-           <span> <BsFillCartFill/></span>
+            <span> Add To Build</span>
+            <span>
+              {" "}
+              <BsFillCartFill />
+            </span>
           </button>
         </div>
       </div>

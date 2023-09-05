@@ -1,11 +1,11 @@
-import Root from './layout/Root'
+import Root from "./layout/Root";
 
 function App() {
   return (
     <div>
-      <Root /> 
+      <Root />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
