@@ -14,27 +14,26 @@ const Banner = () => {
     <div className="max-w-xl text-center sm:text-left ">
       <h1 className="text-3xl font-extrabold sm:text-5xl">
         Best Collection
-        <strong className="block font-extrabold text-rose-700">
+        <strong className="block font-extrabold text-blue-700">
           For Home Decoration
         </strong>
       </h1>
 
       <p className="mt-4 max-w-lg sm:text-xl/relaxed">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt illo
-        tenetur fuga ducimus numquam ea!
+   Our Favorite Watches For Disregarding Summer Rules. Watch is the ultimate device for a healthy life.
       </p>
 
       <div className="mt-8 flex flex-wrap gap-4 text-center">
         <Link
           to={'/products'}
-          className="block w-full rounded bg-rose-600 px-12 py-3 text-sm font-medium text-white shadow hover:bg-rose-700 focus:outline-none focus:ring active:bg-rose-500 sm:w-auto"
+          className="block w-full rounded bg-blue-600 px-12 py-3 text-sm font-medium text-white shadow hover:bg-blue-700 focus:outline-none focus:ring active:bg-blue-500 sm:w-auto"
         >
           Get Started
         </Link>
 
         <Link
           to={'/products'}
-          className="block w-full rounded bg-white px-12 py-3 text-sm font-medium text-rose-600 shadow hover:text-rose-700 focus:outline-none focus:ring active:text-rose-500 sm:w-auto"
+          className="block w-full rounded bg-white px-12 py-3 text-sm font-medium text-blue-600 shadow hover:text-blue-700 focus:outline-none focus:ring active:text-blue-500 sm:w-auto"
         >
           Shop Now
         </Link>

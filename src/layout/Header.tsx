@@ -17,11 +17,13 @@ const Header = () => {
   };
   const [open, setOpen] = useState(false);
   return (
-    <nav className="h-14 mx-auto flex justify-between items-center bg-gray-100 rounded-full m-2 max-w-7xl px-5">
+    <nav className="h-14 mx-auto flex justify-between items-center bg-gray-100 rounded-full m-2 max-w-7xl px-6">
       <div>
-        <h1 className="font-bold text-rose-600">
+        <Link to={'/'}>
+        <h1 className="font-bold text-blue-600">
           Your <span className="text-black">Shop</span>
         </h1>
+        </Link>
       </div>
       <ul className="h-full hidden sm:flex justify-center items-center  gap-5 font-semibold text-indigo-900">
         <li>
@@ -43,7 +45,7 @@ const Header = () => {
         </div>
         <button
           onClick={toggleCart}
-          className="bg-rose-700 flex justify-center items-center p-2 rounded-full"
+          className="bg-blue-700 flex justify-center items-center p-2 rounded-full"
         >
           {/* Cart Icon */}
           <BsFillCartFill className="text-white " />
