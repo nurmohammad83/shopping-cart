@@ -1,6 +1,10 @@
+import Banner from "../components/Banner";
+
 const Home = () => {
   return (
-    <div className="text-red-600 font-bold">Home</div>
+    <div className="">
+      <Banner />
+    </div>
   )
 }
-export default Home
+export default Home;
