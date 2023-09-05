@@ -1,27 +1,24 @@
-# React + TypeScript + Vite
+#  YOUR SHOP
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Live Link: https://shopping-cart-eta-jet.vercel.app/
 
-Currently, two official plugins are available:
+![YOUR SHOP](https://res.cloudinary.com/dyy4n4fmh/image/upload/v1693925209/Screenshot_187_e0qmrv.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+YOUR SHOP is a web application built with React.js, Typescript, Tailwind CSS, and Redux. The app allows users can added products in shopping cart.
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- React.js: For building the frontend.
+- Typescript: For using types safety.
+- React Icon: For using icon.
+- Tailwind CSS: For utility-first CSS and styling.
+- Redux: For state management.
 
-- Configure the top-level `parserOptions` property like this:
+## Installation
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+1. Clone the repository:
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+```bash
+git clone https://github.com/nurmohammad83/shopping-cart.git
+cd shopping-cart
+yarn add
